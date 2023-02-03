@@ -25,6 +25,7 @@ button {
     --sub-color: #EDF24B;
     --sub-color-2: #203F59;
     --text-color-main: #F2F2F2;
+    --main-color-light: rgb(212, 212, 212);
 }
 
 /* -------------------- SIDEBAR GRID -------------------- */
@@ -97,6 +98,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px 1fr;
+    border-bottom: 1px solid rgb(212, 212, 212);
 }
 
 .header-search {
@@ -121,7 +123,7 @@ header {
 #site-search {
     border: 0px;
     border-radius: 20px;
-    background-color: rgb(212, 212, 212);
+    background-color: var(--main-color-light);
     height: 25px;
     width: 200px;
 }
@@ -197,11 +199,11 @@ header {
 }
 
 .main-content {
-    background-color: orange;
+    background-color: white;
     display: grid;
     grid-template-columns: 3fr minmax(400px, 1fr);
-    /* padding: 20px;
-    gap: 20px; */
+    padding: 20px;
+    gap: 20px;
 }
 
 .main-content-container {
