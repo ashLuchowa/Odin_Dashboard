@@ -15,6 +15,8 @@
 
 button {
     cursor: pointer;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 :root {
@@ -55,9 +57,9 @@ button {
     font-weight: bold;
 }
 
-/* .sidebar-nav {
-    
-} */
+.sidebar-nav, .sidebar-options {
+    padding: 10px;
+}
 
 .sidebar-nav ul li, .sidebar-options ul li {
     list-style-type: none;
@@ -90,22 +92,38 @@ button {
 
 /* -------------------- HEADER GRID -------------------- */
 header {
-    background-color: green;
+    padding: 0px 30px;
+    background-color: var(--text-color-main);
     height: 1fr;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 35px 1fr;
+    grid-template-rows: 80px 1fr;
 }
 
 .header-search {
-    background-color: rgb(123, 192, 123);
     grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-search-left, .header-search-right {
     display: flex;
 }
 
+.header-search-right button {
+    margin-left: 20px;
+}
+
+#search-btn {
+    margin-right: 10px;
+}
+
 #site-search {
-    min-width: 200px;
-    flex: 1;
+    border: 0px;
+    border-radius: 20px;
+    background-color: rgb(212, 212, 212);
+    height: 25px;
     /* margin: 0px 200px 0px 20px; */
 }
 
@@ -118,6 +136,10 @@ header {
 
 .header-name-pic {
     grid-row: 1 / 3;
+}
+
+.header-name-pic img {
+    border-radius: 40px;
 }
 
 .header-name-subtext {
@@ -136,6 +158,14 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 50px;
     gap: 50px;
+}
+
+#profile-btn img {
+    border-radius: 20px;
+}
+
+#mimsoo-text p {
+    font-weight: bold;
 }
 
 /* -------------------- CONTENT GRID -------------------- */
