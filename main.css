@@ -25,7 +25,8 @@ button {
     --sub-color: #EDF24B;
     --sub-color-2: #203F59;
     --text-color-main: #F2F2F2;
-    --main-color-light: rgb(212, 212, 212);
+    --main-color-light: rgb(228, 228, 228);
+    --main-color-3: #3facf5;
 }
 
 /* -------------------- SIDEBAR GRID -------------------- */
@@ -98,7 +99,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px 1fr;
-    border-bottom: 1px solid rgb(212, 212, 212);
+    border-bottom: 1px solid #c4c4c4;
 }
 
 .header-search {
@@ -194,12 +195,12 @@ header {
 }
 
 /* -------------------- CONTENT GRID -------------------- */
-.main-content div {
+/* .main-content div {
     border: 1px solid black;
-}
+} */
 
 .main-content {
-    background-color: white;
+    background-color: var(--main-color-light);
     display: grid;
     grid-template-columns: 3fr minmax(400px, 1fr);
     padding: 20px;
@@ -209,11 +210,12 @@ header {
 .main-content-container {
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 35px 1fr;
+    padding-top: 15px;
 }
 
 .projects {
-    background-color: rgb(253, 255, 142);
+    gap: 20px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: grid;
@@ -221,8 +223,29 @@ header {
 }
 
 .project-card {
+    background-color: var(--text-color-main);
     display: grid;
     grid-template-rows: 4fr 1fr;
+    border-radius: 10px;
+    border-left: 8px solid var(--main-color-3);
+    box-shadow: 2px 4px 10px #d4d4d4;
+}
+
+.project-card-text {
+    padding: 35px 40px 30px 20px;
+}
+
+.project-card-btn {
+    display: flex;
+    justify-content: right;
+}
+
+.project-card-btn button {
+    margin-right: 15px;
+}
+
+.project-card-btn img {
+    height: 25px;
 }
 
 /* ----- Cards ----- */
