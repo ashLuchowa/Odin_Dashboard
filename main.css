@@ -25,6 +25,7 @@ button {
     --sub-color: #EDF24B;
     --sub-color-2: #203F59;
     --text-color-main: #F2F2F2;
+    --text-color-sub: #333333;
     --main-color-light: rgb(228, 228, 228);
     --main-color-3: #3facf5;
 }
@@ -223,16 +224,24 @@ header {
 }
 
 .project-card {
-    background-color: var(--text-color-main);
+    background-color: white;
     display: grid;
     grid-template-rows: 4fr 1fr;
     border-radius: 10px;
     border-left: 8px solid var(--main-color-3);
-    box-shadow: 2px 4px 10px #d4d4d4;
+    box-shadow: 2px 4px 5px #d4d4d4;
 }
 
 .project-card-text {
-    padding: 35px 40px 30px 20px;
+    padding: 35px 30px 30px 30px;
+}
+
+.project-card-text h3 {
+    margin-bottom: 4px;
+}
+
+.project-card-text p {
+    color: var(--text-color-sub);
 }
 
 .project-card-btn {
@@ -252,20 +261,42 @@ header {
 
 /* ----- Announcement ----- */
 .announcements {
-    background-color: yellow;
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 35px 1fr;
+    padding-top: 15px;
 }
 
 .announcements-content {
     display: flex;
     flex-direction: column;
-    background-color: rgb(245, 168, 168);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px #d4d4d4;
+    padding: 35px 30px 35px 30px;
+}
+
+.announcements-subcontent {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 20px 0px;
+}
+
+.announcements-subcontent:last-child {
+    border-bottom: 0px;
+}
+
+.announcements-subcontent h3 {
+    margin-bottom: 4px;
+}
+
+.announcements-subcontent p {
+    color: var(--text-color-sub);
+    font-size: 14px;
 }
 
 /* ----- Trending ----- */
 .trendings {
-    background-color: rgb(190, 190, 3);
     display: grid;
     grid-template-rows: 50px 1fr;
 }
