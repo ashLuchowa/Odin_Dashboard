@@ -91,7 +91,7 @@ button {
 
 /* -------------------- HEADER GRID -------------------- */
 header {
-    padding: 0px 30px;
+    padding: 0px 30px 10px 30px;
     background-color: var(--text-color-main);
     display: grid;
     grid-template-columns: 1fr 1fr;
