@@ -89,10 +89,6 @@ button {
     color: rgb(175, 175, 175);
 }
 
-/* .sidebar-options {
-    background-color: rgb(61, 4, 216);
-} */
-
 /* -------------------- HEADER GRID -------------------- */
 header {
     padding: 0px 30px;
@@ -128,11 +124,14 @@ header {
     background-color: var(--main-color-light);
     height: 25px;
     width: 200px;
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-out;
+    transition: 0.15s ease-out;
 }
 
 #site-search:focus {
     width: 350px;
-    transition: 0.15s ease-in-out;
 }
 
 .header-name {
@@ -179,12 +178,15 @@ header {
     border-radius: 18px;
     height: 40px;
     width: 120px;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .header-btn button:hover {
     background-color: #646464;
     transform: translateY(-2px);
-    transition: .2s ease-in-out;
 }
 
 #profile-btn img {
