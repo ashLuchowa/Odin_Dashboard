@@ -196,10 +196,6 @@ header {
 }
 
 /* -------------------- CONTENT GRID -------------------- */
-/* .main-content div {
-    border: 1px solid black;
-} */
-
 .main-content {
     background-color: var(--main-color-light);
     display: grid;
@@ -298,10 +294,37 @@ header {
 /* ----- Trending ----- */
 .trendings {
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 35px 1fr;
+    padding-top: 15px;
+}
+
+.trendings-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px #d4d4d4;
+    padding: 35px 30px 35px 30px;
 }
 
 .trendings-subcontent {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    padding-top: 15px;
+}
+
+.trendings-subcontent:first-child {
+    padding-top: 0px;
+}
+
+.trendings-subcontent img {
+    border-radius: 80px;
+}
+
+.trendings-subcontent-text p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.trendings-subcontent-text P + p {
+    color: var(--text-color-sub);
+    font-size: 14px;
 }
